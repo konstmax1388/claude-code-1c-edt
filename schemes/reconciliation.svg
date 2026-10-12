@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="40" y="48" font-size="26" font-weight="600" fill="#222">Сплошная сверка: отдельный проход после кода</text>
+
+  <g font-size="17" fill="#222">
+    <rect x="40" y="110" width="250" height="130" rx="10" fill="#eef4fc" stroke="#3a78c2" stroke-width="2"/>
+    <text x="60" y="145" font-weight="600" font-size="19">1. Реестр входов</text>
+    <text x="60" y="175">все лоты, все файлы,</text>
+    <text x="60" y="199">все строки справочника,</text>
+    <text x="60" y="223">а не выборка</text>
+
+    <rect x="340" y="110" width="250" height="130" rx="10" fill="#eef4fc" stroke="#3a78c2" stroke-width="2"/>
+    <text x="360" y="145" font-weight="600" font-size="19">2. Вход и правило</text>
+    <text x="360" y="175">что код сделал с каждым</text>
+    <text x="360" y="199">элементом; формат по</text>
+    <text x="360" y="223">содержимому, не по имени</text>
+
+    <rect x="640" y="110" width="250" height="130" rx="10" fill="#eef4fc" stroke="#3a78c2" stroke-width="2"/>
+    <text x="660" y="145" font-weight="600" font-size="19">3. Расхождения</text>
+    <text x="660" y="175">не покрыто ни одним</text>
+    <text x="660" y="199">правилом; покрыто</text>
+    <text x="660" y="223">несколькими</text>
+
+    <rect x="640" y="320" width="250" height="110" rx="10" fill="#fbe0dd" stroke="#c0392b" stroke-width="2"/>
+    <text x="660" y="355" font-weight="600" font-size="19">4. Исправить</text>
+    <text x="660" y="385">код или правила,</text>
+    <text x="660" y="409">и снова с п.1</text>
+
+    <rect x="940" y="110" width="220" height="130" rx="10" fill="#dff2df" stroke="#3c9a4a" stroke-width="2"/>
+    <text x="960" y="145" font-weight="600" font-size="19">0 расхождений</text>
+    <text x="960" y="175">явный счет</text>
+    <text x="960" y="199">«N из N»</text>
+
+    <rect x="940" y="320" width="220" height="110" rx="10" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="960" y="355" font-weight="600" font-size="19">Приемка</text>
+    <text x="960" y="385">человеком на</text>
+    <text x="960" y="409">реальных данных</text>
+  </g>
+  <g stroke="#555" stroke-width="2.2" fill="none" marker-end="url(#a)">
+    <line x1="290" y1="175" x2="336" y2="175"/>
+    <line x1="590" y1="175" x2="636" y2="175"/>
+    <line x1="890" y1="175" x2="936" y2="175"/>
+    <line x1="765" y1="240" x2="765" y2="316"/>
+    <line x1="1050" y1="240" x2="1050" y2="316"/>
+    <path d="M640,375 L165,375 L165,244"/>
+  </g>
+  <text x="905" y="165" font-size="14" fill="#3c9a4a">0</text>
+  <text x="775" y="285" font-size="15" fill="#c0392b">есть</text>
+  <text x="40" y="480" font-size="16" fill="#555">Первый проход почти всегда дает расхождения. До нуля их сводят несколько циклов.</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="40" y="48" font-size="26" font-weight="600" fill="#222">Кто что делает в одной задаче</text>
+
+  <!-- легенда -->
+  <rect x="760" y="28" width="22" height="22" rx="4" fill="#fde7c8" stroke="#d98a1c"/>
+  <text x="790" y="45" font-size="17" fill="#333">человек</text>
+  <rect x="880" y="28" width="22" height="22" rx="4" fill="#d9e8fb" stroke="#3a78c2"/>
+  <text x="910" y="45" font-size="17" fill="#333">агент</text>
+  <rect x="985" y="28" width="22" height="22" rx="4" fill="#dff2df" stroke="#3c9a4a"/>
+  <text x="1015" y="45" font-size="17" fill="#333">агент + EDT/база</text>
+
+  <!-- ряд 1 -->
+  <g font-size="17" fill="#222">
+    <rect x="40" y="100" width="250" height="150" rx="10" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="60" y="135" font-weight="600" font-size="19">1. Постановка</text>
+    <text x="60" y="165">что нужно, пороги,</text>
+    <text x="60" y="189">что считать ошибкой</text>
+    <text x="60" y="213">в данных</text>
+
+    <rect x="330" y="100" width="250" height="150" rx="10" fill="#d9e8fb" stroke="#3a78c2" stroke-width="2"/>
+    <text x="350" y="135" font-weight="600" font-size="19">2. Исследование</text>
+    <text x="350" y="165">метаданные, модули,</text>
+    <text x="350" y="189">похожие решения,</text>
+    <text x="350" y="213">справка платформы</text>
+
+    <rect x="620" y="100" width="250" height="150" rx="10" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="640" y="135" font-weight="600" font-size="19">3. Каркас объекта</text>
+    <text x="640" y="165">в конструкторе EDT</text>
+    <text x="640" y="189">(или API EDT, если</text>
+    <text x="640" y="213">операция там есть)</text>
+
+    <rect x="910" y="100" width="250" height="150" rx="10" fill="#d9e8fb" stroke="#3a78c2" stroke-width="2"/>
+    <text x="930" y="135" font-weight="600" font-size="19">4. Наполнение</text>
+    <text x="930" y="165">код, запросы, СКД,</text>
+    <text x="930" y="189">права ролей,</text>
+    <text x="930" y="213">реквизиты</text>
+  </g>
+
+  <!-- ряд 2 (справа налево) -->
+  <g font-size="17" fill="#222">
+    <rect x="910" y="340" width="250" height="160" rx="10" fill="#dff2df" stroke="#3c9a4a" stroke-width="2"/>
+    <text x="930" y="375" font-weight="600" font-size="19">5. Проверки</text>
+    <text x="930" y="405">валидация EDT,</text>
+    <text x="930" y="429">свои скрипты для</text>
+    <text x="930" y="453">файлов мимо</text>
+    <text x="930" y="477">конструктора</text>
+
+    <rect x="620" y="340" width="250" height="160" rx="10" fill="#dff2df" stroke="#3c9a4a" stroke-width="2"/>
+    <text x="640" y="375" font-weight="600" font-size="19">6. Тестовая база</text>
+    <text x="640" y="405">обновление после</text>
+    <text x="640" y="429">сборки EDT, прогон</text>
+    <text x="640" y="453">на данных, сплошная</text>
+    <text x="640" y="477">сверка «N из N»</text>
+
+    <rect x="330" y="340" width="250" height="160" rx="10" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="350" y="375" font-weight="600" font-size="19">7. Приемка</text>
+    <text x="350" y="405">в реальной форме,</text>
+    <text x="350" y="429">на реальных данных,</text>
+    <text x="350" y="453">вид форм и макетов</text>
+
+    <rect x="40" y="340" width="250" height="160" rx="10" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="60" y="375" font-weight="600" font-size="19">8. Выкат</text>
+    <text x="60" y="405">на боевые базы</text>
+    <text x="60" y="429">обновляет человек</text>
+  </g>
+
+  <g stroke="#555" stroke-width="2.2" fill="none" marker-end="url(#a)">
+    <line x1="290" y1="175" x2="326" y2="175"/>
+    <line x1="580" y1="175" x2="616" y2="175"/>
+    <line x1="870" y1="175" x2="906" y2="175"/>
+    <line x1="1120" y1="250" x2="1120" y2="336"/>
+    <line x1="910" y1="420" x2="874" y2="420"/>
+    <line x1="620" y1="420" x2="584" y2="420"/>
+    <line x1="330" y1="420" x2="294" y2="420"/>
+  </g>
+  <!-- возврат при расхождениях -->
+  <polyline points="745,340 745,302 1000,302 1000,256" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 5" fill="none" marker-end="url(#a)"/>
+  <text x="760" y="326" font-size="16" fill="#c0392b">расхождения в сверке</text>
+  <polyline points="455,340 455,280 1075,280 1075,256" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 5" fill="none" marker-end="url(#a)"/>
+  <text x="470" y="272" font-size="16" fill="#c0392b">замечания при приемке: назад к п. 4</text>
+  <text x="40" y="540" font-size="15" fill="#666">Коммит и пуш своих файлов после каждого законченного шага (п. 4-6).</text>
+</svg>

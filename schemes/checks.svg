@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="40" y="48" font-size="26" font-weight="600" fill="#222">Какая проверка что ловит и что пропускает</text>
+  <text x="40" y="80" font-size="16" fill="#666">Чем ниже уровень, тем дороже ошибка, которая до него дошла</text>
+
+  <g font-size="17">
+    <!-- заголовки колонок -->
+    <text x="60" y="125" font-weight="600" fill="#444">Уровень</text>
+    <text x="520" y="125" font-weight="600" fill="#444">Пропускает (реальные случаи)</text>
+
+    <rect x="40" y="140" width="440" height="70" rx="8" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="60" y="170" font-weight="600" fill="#222">Запись модуля через MCP</text>
+    <text x="60" y="195" font-size="15" fill="#555">баланс Процедура/Если/Цикл/Попытка</text>
+    <text x="520" y="183" fill="#333">почти все остальное</text>
+
+    <rect x="70" y="222" width="410" height="70" rx="8" fill="#e3eefb" stroke="#3a78c2"/>
+    <text x="90" y="252" font-weight="600" fill="#222">validate_query</text>
+    <text x="90" y="277" font-size="15" fill="#555">синтаксис и поля запроса</text>
+    <text x="520" y="265" fill="#333">запрос верный, но медленный: 240 с в отчете из-за ГОД() без ВТ</text>
+
+    <rect x="100" y="304" width="380" height="70" rx="8" fill="#d6e6fa" stroke="#3a78c2"/>
+    <text x="120" y="334" font-weight="600" fill="#222">Ошибки проекта EDT</text>
+    <text x="120" y="359" font-size="15" fill="#555">модель, типы, ссылки</text>
+    <text x="520" y="330" fill="#333">лишний аргумент в вызове своей функции;</text>
+    <text x="520" y="354" fill="#333">&lt;title&gt; в СКД без xsi:type; порядок блоков ролей</text>
+
+    <rect x="130" y="386" width="350" height="70" rx="8" fill="#dff2df" stroke="#3c9a4a"/>
+    <text x="150" y="416" font-weight="600" fill="#222">Свои скрипты до загрузки</text>
+    <text x="150" y="441" font-size="15" fill="#555">роли, СКД из файла, макеты</text>
+    <text x="520" y="429" fill="#333">ошибки в данных и логике расчета</text>
+
+    <rect x="160" y="468" width="320" height="70" rx="8" fill="#cfeacf" stroke="#3c9a4a"/>
+    <text x="180" y="498" font-weight="600" fill="#222">Сплошная сверка на базе</text>
+    <text x="180" y="523" font-size="15" fill="#555">N из N, 0 расхождений</text>
+    <text x="520" y="499" fill="#333">вид формы, удобство, бизнес-смысл порогов</text>
+
+    <rect x="190" y="550" width="290" height="70" rx="8" fill="#fde7c8" stroke="#d98a1c"/>
+    <text x="210" y="580" font-weight="600" fill="#222">Приемка человеком</text>
+    <text x="210" y="605" font-size="15" fill="#555">реальная форма, данные</text>
+    <text x="520" y="590" fill="#333">дальше только боевая база</text>
+  </g>
+  <line x1="500" y1="140" x2="500" y2="620" stroke="#ccc" stroke-width="1.5"/>
+</svg>

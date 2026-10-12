@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <text x="40" y="48" font-size="26" font-weight="600" fill="#222">Rights.rights: блоки идут по возрастанию UUID объекта</text>
+  <text x="40" y="80" font-size="16" fill="#666">UUID берется из .mdo объекта; у реквизита, ТЧ, команды из .mdo владельца</text>
+
+  <g font-family="Consolas, monospace" font-size="16">
+    <!-- колонка 1 -->
+    <text x="60" y="130" font-family="Segoe UI, Arial" font-size="19" font-weight="600" fill="#222">Как пишет EDT</text>
+    <rect x="60" y="145" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="75" y="177" fill="#222">0a1f…  Catalog.Сады</text>
+    <rect x="60" y="205" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="75" y="237" fill="#222">3c90…  Document.Наряд</text>
+    <rect x="60" y="265" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="75" y="297" fill="#222">7d42…  Report.Полив</text>
+    <rect x="60" y="325" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="75" y="357" fill="#222">c815…  DataProcessor.Импорт</text>
+
+    <!-- колонка 2 -->
+    <text x="440" y="130" font-family="Segoe UI, Arial" font-size="19" font-weight="600" fill="#c0392b">Дописано в конец</text>
+    <rect x="440" y="145" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="455" y="177" fill="#222">0a1f…  Catalog.Сады</text>
+    <rect x="440" y="205" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="455" y="237" fill="#222">3c90…  Document.Наряд</text>
+    <rect x="440" y="265" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="455" y="297" fill="#222">7d42…  Report.Полив</text>
+    <rect x="440" y="325" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="455" y="357" fill="#222">c815…  DataProcessor.Импорт</text>
+    <rect x="440" y="385" width="320" height="52" rx="6" fill="#fbe0dd" stroke="#c0392b" stroke-width="2"/>
+    <text x="455" y="417" fill="#c0392b">5e07…  Catalog.Ловушки</text>
+
+    <!-- колонка 3 -->
+    <text x="820" y="130" font-family="Segoe UI, Arial" font-size="19" font-weight="600" fill="#3c9a4a">Вставлено в позицию</text>
+    <rect x="820" y="145" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="835" y="177" fill="#222">0a1f…  Catalog.Сады</text>
+    <rect x="820" y="205" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="835" y="237" fill="#222">3c90…  Document.Наряд</text>
+    <rect x="820" y="265" width="320" height="52" rx="6" fill="#dff2df" stroke="#3c9a4a" stroke-width="2"/>
+    <text x="835" y="297" fill="#2e7d3a">5e07…  Catalog.Ловушки</text>
+    <rect x="820" y="325" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="835" y="357" fill="#222">7d42…  Report.Полив</text>
+    <rect x="820" y="385" width="320" height="52" rx="6" fill="#eef4fc" stroke="#3a78c2"/>
+    <text x="835" y="417" fill="#222">c815…  DataProcessor.Импорт</text>
+  </g>
+
+  <g font-size="17">
+    <text x="440" y="480" fill="#c0392b" font-weight="600">Загрузка в базу висит без конца</text>
+    <text x="440" y="506" fill="#555">ядро 100 %, SQL не трогается,</text>
+    <text x="440" y="530" fill="#555">ни ошибки, ни записи в лог</text>
+    <text x="820" y="480" fill="#2e7d3a" font-weight="600">Обновление за минуты</text>
+    <text x="820" y="506" fill="#555">API EDT (modify_metadata)</text>
+    <text x="820" y="530" fill="#555">или скрипт со вставкой по UUID</text>
+    <text x="60" y="480" fill="#222" font-weight="600">Плюс две грабли рядом:</text>
+    <text x="60" y="506" fill="#555">права на Enum.* тоже вешают загрузку;</text>
+    <text x="60" y="530" fill="#555">Use на HTTPService целиком</text>
+    <text x="60" y="554" fill="#555">платформа молча выбрасывает</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "EDT_PROJECT": {
+      "type": "http",
+      "url": "http://localhost:8789/mcp"
+    }
+  }
+}

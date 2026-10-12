@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <text x="40" y="40" font-size="26" font-weight="600" fill="#222">Из чего собран стенд</text>
+
+  <g font-size="16" fill="#222">
+    <!-- агент -->
+    <rect x="40" y="90" width="300" height="250" rx="12" fill="#d9e8fb" stroke="#3a78c2" stroke-width="2"/>
+    <text x="60" y="125" font-size="20" font-weight="600">Claude Code</text>
+    <text x="60" y="155">модель Opus</text>
+    <text x="60" y="190" font-weight="600">читает при старте:</text>
+    <text x="60" y="215">CLAUDE.md</text>
+    <text x="60" y="239">.claude/rules/*.md (40)</text>
+    <text x="60" y="263">.claude/skills (навыки 1С)</text>
+    <text x="60" y="287">память проекта</text>
+    <text x="60" y="311">.mcp.json (адрес MCP)</text>
+
+    <!-- EDT -->
+    <rect x="450" y="90" width="320" height="250" rx="12" fill="#eef4fc" stroke="#3a78c2" stroke-width="2"/>
+    <text x="470" y="125" font-size="20" font-weight="600">1C:EDT</text>
+    <text x="470" y="155">плагин EDT-MCP (DitriX)</text>
+    <text x="470" y="179">http://localhost:&lt;порт&gt;/mcp</text>
+    <text x="470" y="214" font-weight="600">что дает агенту:</text>
+    <text x="470" y="239">метаданные, модули, ссылки</text>
+    <text x="470" y="263">запись модуля + синтаксис</text>
+    <text x="470" y="287">validate_query, ошибки проекта</text>
+    <text x="470" y="311">обновление тестовой базы</text>
+
+    <!-- база -->
+    <rect x="880" y="90" width="280" height="250" rx="12" fill="#dff2df" stroke="#3c9a4a" stroke-width="2"/>
+    <text x="900" y="125" font-size="20" font-weight="600">Тестовая база</text>
+    <text x="900" y="155">серверная, копия боевой</text>
+    <text x="900" y="190" font-weight="600">агент запускает:</text>
+    <text x="900" y="215">тонкий клиент /Execute</text>
+    <text x="900" y="239">с обработкой-исполнителем</text>
+    <text x="900" y="263">запросов и BSL-скриптов,</text>
+    <text x="900" y="287">результат пишется в файл</text>
+
+    <!-- git -->
+    <rect x="450" y="420" width="320" height="140" rx="12" fill="#f3f3f3" stroke="#888" stroke-width="2"/>
+    <text x="470" y="455" font-size="20" font-weight="600">git</text>
+    <text x="470" y="485">только свои объекты по префиксам</text>
+    <text x="470" y="509">+ Configuration.mdo</text>
+    <text x="470" y="533">типовая (7,4 ГБ) в репозиторий не идет</text>
+
+    <!-- человек -->
+    <rect x="40" y="420" width="300" height="140" rx="12" fill="#fde7c8" stroke="#d98a1c" stroke-width="2"/>
+    <text x="60" y="455" font-size="20" font-weight="600">Разработчик</text>
+    <text x="60" y="485">конструктор EDT: каркасы</text>
+    <text x="60" y="509">объектов и формы</text>
+    <text x="60" y="533">приемка, выкат на боевые</text>
+
+    <rect x="880" y="420" width="280" height="140" rx="12" fill="#f3f3f3" stroke="#888" stroke-width="2"/>
+    <text x="900" y="455" font-size="20" font-weight="600">Свои скрипты</text>
+    <text x="900" y="485">Python, PowerShell:</text>
+    <text x="900" y="509">проверки ролей и СКД,</text>
+    <text x="900" y="533">генераторы схем, сверки</text>
+  </g>
+
+  <g stroke="#555" stroke-width="2.2" fill="none">
+    <line x1="340" y1="215" x2="446" y2="215" marker-end="url(#a)"/>
+    <line x1="446" y1="245" x2="344" y2="245" marker-end="url(#a)"/>
+    <line x1="770" y1="230" x2="876" y2="230" marker-end="url(#a)"/>
+    <line x1="610" y1="340" x2="610" y2="416" marker-end="url(#a)"/>
+    <line x1="190" y1="420" x2="190" y2="344" marker-end="url(#a)"/>
+    <line x1="340" y1="490" x2="446" y2="490" marker-end="url(#a)"/>
+    <polyline points="260,90 260,74 1060,74 1060,86" marker-end="url(#a)" stroke-dasharray="6 5"/>
+    <line x1="880" y1="490" x2="774" y2="490" marker-end="url(#a)"/>
+  </g>
+  <g font-size="14" fill="#555">
+    <text x="360" y="207">MCP (HTTP)</text>
+    <text x="785" y="222">конфигуратор</text>
+    <text x="620" y="384">исходники</text>
+    <text x="520" y="66">прогон проверок на данных через тонкий клиент</text>
+    <text x="200" y="390">задачи, ответы</text>
+  </g>
+</svg>
