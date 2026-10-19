@@ -22,6 +22,7 @@
 | [templates/gitignore.example](templates/gitignore.example) | git для проекта на типовой: только свои объекты по префиксам и `Configuration.mdo` |
 | [scripts/check_rights_order.py](scripts/check_rights_order.py) | проверка ролей: порядок блоков в `Rights.rights` по UUID, права на `Enum.*`, права на HTTP-сервис целиком |
 | [scripts/check_dcs_nodes.py](scripts/check_dcs_nodes.py) | проверка схем СКД после правки скриптом: `<title>` без `xsi:type`, разнобой однотипных узлов, порядок `<appearance>` |
+| [ui-driver/](ui-driver/) | агент управляет тонким клиентом через менеджер тестирования: дерево формы, нажатие кнопок по имени (UPD 19.10.2026, идея Cocky_Idiot из комментариев) |
 | [schemes/](schemes/) | схемы из статьи (PNG и SVG) |
 
 ## Быстрый старт
