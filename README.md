@@ -16,6 +16,7 @@
 | Файл | Зачем |
 |---|---|
 | [templates/CLAUDE.md](templates/CLAUDE.md) | стартовый CLAUDE.md для EDT-проекта: запреты, рабочий цикл, диагностика |
+| [rules/](rules/) | правила для `.claude/rules/`: обновление базы, порядок прав, БСП-печать и варианты отчетов, СКД, формы, импорт НСИ; откуда остальные из 40 (UPD 28.10.2026, по просьбе из комментариев) |
 | [templates/rule-template.md](templates/rule-template.md) | шаблон правила: симптом, причина, рецепт, ложные направления, проверка |
 | [templates/checklist-before-db-update.md](templates/checklist-before-db-update.md) | что проверить до «Обновить конфигурацию базы данных» и что делать, если обновление висит |
 | [templates/mcp.json.example](templates/mcp.json.example) | подключение Claude Code к плагину EDT-MCP |
